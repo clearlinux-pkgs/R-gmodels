@@ -4,7 +4,7 @@
 #
 Name     : R-gmodels
 Version  : 2.16.2
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/gmodels_2.16.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gmodels_2.16.2.tar.gz
 Summary  : Various R Programming Tools for Model Fitting
