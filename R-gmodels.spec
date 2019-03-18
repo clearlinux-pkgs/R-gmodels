@@ -4,14 +4,12 @@
 #
 Name     : R-gmodels
 Version  : 2.18.1
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/gmodels_2.18.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gmodels_2.18.1.tar.gz
 Summary  : Various R Programming Tools for Model Fitting
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-gdata
-Requires: R-rms
 BuildRequires : R-gdata
 BuildRequires : R-rms
 BuildRequires : buildreq-R
@@ -27,10 +25,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552888651
+export SOURCE_DATE_EPOCH=1552896548
 
 %install
-export SOURCE_DATE_EPOCH=1552888651
+export SOURCE_DATE_EPOCH=1552896548
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
