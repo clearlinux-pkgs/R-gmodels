@@ -4,7 +4,7 @@
 #
 Name     : R-gmodels
 Version  : 2.18.1
-Release  : 30
+Release  : 31
 URL      : https://cran.r-project.org/src/contrib/gmodels_2.18.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gmodels_2.18.1.tar.gz
 Summary  : Various R Programming Tools for Model Fitting
@@ -12,30 +12,29 @@ Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-gdata
 BuildRequires : R-gdata
-BuildRequires : R-rms
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
 No detailed description available
 
 %prep
 %setup -q -c -n gmodels
+cd %{_builddir}/gmodels
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571839201
+export SOURCE_DATE_EPOCH=1589783079
 
 %install
-export SOURCE_DATE_EPOCH=1571839201
+export SOURCE_DATE_EPOCH=1589783079
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
